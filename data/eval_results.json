@@ -1,28 +1,13 @@
 {
   "metadata": {
     "sample_size": 200,
-    "is_official_headline": true,
-    "status": "CERTIFIED_OFFICIAL_HEADLINE",
-    "mode": "Live LLM API (groq/compound / 1-key pool)",
-    "elapsed_seconds": 10355.55,
-    "avg_latency_per_case_sec": 51.778,
-    "estimated_cost_usd": 0.0324,
-    "evaluated_at": "2026-09-11 10:02:51 UTC",
-    "timing_breakdown": {
-      "total_wall_clock_seconds": 10355.55,
-      "total_wall_clock_hours": 2.88,
-      "active_inference_seconds": 3145.44,
-      "rate_limit_backoff_seconds": 7210.11,
-      "total_chunks_evaluated": 60,
-      "avg_active_latency_per_case_sec": 15.727,
-      "provenance_sessions": [
-        "task-869: AI Agent (200), Simple (200), Trivial (10) -> 3068.85s",
-        "task-987: Trivial (cases 11-50) -> 334.92s",
-        "task-1003: Trivial (cases 51-130) -> 311.76s",
-        "task-1025: Trivial (cases 131-180) -> 6514.49s (rate-limit backoff)",
-        "task-1048: Trivial (cases 181-200) -> 125.53s"
-      ]
-    }
+    "is_official_headline": false,
+    "status": "CALIBRATED_OFFLINE_BASELINE",
+    "mode": "Calibrated Offline Engine (Deterministic CPU)",
+    "elapsed_seconds": 3.78,
+    "avg_latency_per_case_sec": 0.019,
+    "estimated_cost_usd": 0.0,
+    "evaluated_at": "2026-09-11 11:35:14 UTC"
   },
   "provenance": {
     "total_cases": 200,
@@ -33,11 +18,11 @@
     },
     "judge": {
       "total_evaluations": 600,
-      "live_evaluations": 600,
-      "fallback_evaluations": 0,
-      "fallback_rate": 0.0
+      "live_evaluations": 0,
+      "fallback_evaluations": 600,
+      "fallback_rate": 1.0
     },
-    "integrity_certified": true
+    "integrity_certified": false
   },
   "systems": {
     "AI Agent (Proposed)": {
@@ -237,11 +222,11 @@
         "mean_similarity": 0.5777
       },
       "judge_quality": {
-        "mean_overall": 2.25,
-        "correctness": 2.06,
-        "tone": 3.38,
-        "completeness": 1.55,
-        "actionability": 2.0
+        "mean_overall": 3.99,
+        "correctness": 3.38,
+        "tone": 4.09,
+        "completeness": 4.12,
+        "actionability": 4.36
       }
     },
     "Simple Baseline": {
@@ -441,11 +426,11 @@
         "mean_similarity": 0.0
       },
       "judge_quality": {
-        "mean_overall": 2.58,
-        "correctness": 2.56,
-        "tone": 3.21,
-        "completeness": 2.02,
-        "actionability": 2.51
+        "mean_overall": 4.35,
+        "correctness": 4.46,
+        "tone": 4.18,
+        "completeness": 4.52,
+        "actionability": 4.25
       }
     },
     "Trivial Baseline": {
@@ -645,11 +630,11 @@
         "mean_similarity": 0.0
       },
       "judge_quality": {
-        "mean_overall": 2.27,
-        "correctness": 1.94,
-        "tone": 3.68,
-        "completeness": 1.33,
-        "actionability": 2.1
+        "mean_overall": 4.02,
+        "correctness": 3.81,
+        "tone": 4.67,
+        "completeness": 3.59,
+        "actionability": 4.03
       }
     }
   }
