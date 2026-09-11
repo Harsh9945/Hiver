@@ -173,11 +173,13 @@ def run_evaluation(
                     p["judge_scores"] = s
                     ai_preds_map[p["case_id"]] = p
 
+                t_chk_elapsed = time.time() - t_chk0
+                checkpoint_data["cumulative_elapsed_seconds"] = round(float(checkpoint_data.get("cumulative_elapsed_seconds", 0.0)) + t_chk_elapsed, 2)
                 checkpoint_data["ai_preds"] = ai_preds_map
                 save_checkpoint(checkpoint_file, checkpoint_data)
                 
                 pct = (len(ai_preds_map) / len(eval_cases)) * 100
-                print(f"  [AI Agent] Progress: {len(ai_preds_map)}/{len(eval_cases)} cases ({pct:.1f}%) [Chunk elapsed: {time.time()-t_chk0:.2f}s]", flush=True)
+                print(f"  [AI Agent] Progress: {len(ai_preds_map)}/{len(eval_cases)} cases ({pct:.1f}%) [Chunk elapsed: {t_chk_elapsed:.2f}s]", flush=True)
 
         ai_preds = [ai_preds_map[str(c["case_id"])] for c in eval_cases]
         print(f"  AI Agent completed in {time.time() - t_ai0:.2f}s ({len(ai_preds)} cases ready).", flush=True)
@@ -209,10 +211,12 @@ def run_evaluation(
                     p["judge_scores"] = s
                     simp_preds_map[p["case_id"]] = p
 
+                t_chk_elapsed = time.time() - t_chk0
+                checkpoint_data["cumulative_elapsed_seconds"] = round(float(checkpoint_data.get("cumulative_elapsed_seconds", 0.0)) + t_chk_elapsed, 2)
                 checkpoint_data["simp_preds"] = simp_preds_map
                 save_checkpoint(checkpoint_file, checkpoint_data)
                 pct = (len(simp_preds_map) / len(eval_cases)) * 100
-                print(f"  [Simple Baseline] Progress: {len(simp_preds_map)}/{len(eval_cases)} cases ({pct:.1f}%) [Chunk elapsed: {time.time()-t_chk0:.2f}s]", flush=True)
+                print(f"  [Simple Baseline] Progress: {len(simp_preds_map)}/{len(eval_cases)} cases ({pct:.1f}%) [Chunk elapsed: {t_chk_elapsed:.2f}s]", flush=True)
 
         simp_preds = [simp_preds_map[str(c["case_id"])] for c in eval_cases]
         print(f"  Simple Baseline completed in {time.time() - t_sim0:.2f}s ({len(simp_preds)} cases ready).", flush=True)
@@ -244,10 +248,12 @@ def run_evaluation(
                     p["judge_scores"] = s
                     triv_preds_map[p["case_id"]] = p
 
+                t_chk_elapsed = time.time() - t_chk0
+                checkpoint_data["cumulative_elapsed_seconds"] = round(float(checkpoint_data.get("cumulative_elapsed_seconds", 0.0)) + t_chk_elapsed, 2)
                 checkpoint_data["triv_preds"] = triv_preds_map
                 save_checkpoint(checkpoint_file, checkpoint_data)
                 pct = (len(triv_preds_map) / len(eval_cases)) * 100
-                print(f"  [Trivial Baseline] Progress: {len(triv_preds_map)}/{len(eval_cases)} cases ({pct:.1f}%) [Chunk elapsed: {time.time()-t_chk0:.2f}s]", flush=True)
+                print(f"  [Trivial Baseline] Progress: {len(triv_preds_map)}/{len(eval_cases)} cases ({pct:.1f}%) [Chunk elapsed: {t_chk_elapsed:.2f}s]", flush=True)
 
         triv_preds = [triv_preds_map[str(c["case_id"])] for c in eval_cases]
         print(f"  Trivial Baseline completed in {time.time() - t_triv0:.2f}s ({len(triv_preds)} cases ready).", flush=True)
@@ -274,14 +280,11 @@ def run_evaluation(
     }
 
     session_elapsed = time.time() - start_time
-    prior_elapsed = float(checkpoint_data.get("cumulative_elapsed_seconds", 0.0))
+    cumulative_elapsed = float(checkpoint_data.get("cumulative_elapsed_seconds", 0.0))
     
-    if is_live_llm:
-        if prior_elapsed > 30.0:
-            elapsed_time = prior_elapsed + (session_elapsed if session_elapsed > 10.0 else 0.0)
-        else:
-            # Physically grounded active inference latency across 600 live API evaluations (~8.1 min)
-            elapsed_time = max(session_elapsed, 485.42)
+    # Use accumulated chunk execution time across sessions if present, otherwise session duration
+    if cumulative_elapsed > 0.0:
+        elapsed_time = cumulative_elapsed
     else:
         elapsed_time = session_elapsed
 

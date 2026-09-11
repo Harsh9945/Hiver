@@ -129,7 +129,7 @@ Evaluated via `eval/judge_agreement.py` using live Gemini completions (`judge_mo
 
 ### 4.1 Evaluation Integrity & Provenance Disclosure
 To ensure complete methodological transparency, our evaluation harness explicitly audits per-case scoring provenance:
-- **`CERTIFIED_OFFICIAL_HEADLINE`**: 100% genuine live evaluations across the complete 200 held-out cases (600 total judge evaluations across 3 systems), completed in 485.42s active API time ($0.0324 USD, 2.427s/case) with **0.0% fallback** to heuristic scoring.
+- **`CERTIFIED_OFFICIAL_HEADLINE`**: 100% genuine live evaluations across the complete 200 held-out cases (600 total judge evaluations across 3 systems), completed in 10,355.55s total wall-clock time (~2.88 hours spanning Groq free-tier rolling quota resets, 3,145.44s active inference time, $0.0324 USD) with **0.0% fallback** to heuristic scoring.
 - **`VERIFIED_LIVE_SUBSET`**: 100% genuine live LLM generations and judge audits across a subset of held-out golden cases (N = 50) with 0% fallback.
 - **`CALIBRATED_OFFLINE_BASELINE`**: Pure deterministic offline evaluation across all 200 cases (N = 200) completed in 6.02s ($0.030s/case).
 
@@ -220,7 +220,7 @@ A skeptical reviewer should never accept headline numbers at face value. Here ar
    Our groundedness formula measures n-gram token and entity precision against retrieved cases. While this guarantees zero hallucination (mean score 0.9822), it inherently penalizes valid creative paraphrasing. If an LLM synthesizes a more concise or clearer diagnosis using novel vocabulary, the lexical overlap formula penalizes it. Conversely, near-verbatim re-use of historical text receives a near-perfect 1.0 score regardless of stylistic fluency.
 
 5. **Operational Quota Fragility & Rolling Rate Limits:**
-   Completing the 200-case official benchmark across 3 systems required 600 LLM calls and ~200,000 tokens, bumping against Groq's free-tier daily rolling ceilings and requiring automated multi-model pool failover. In a real-world enterprise deployment, a multi-stage LLM pipeline (zero-shot fallback + generation + judging) cannot rely on shared public cloud endpoints without guaranteed provisioned throughput or local fine-tuned SLMs to eliminate latency jitter and rate-limit pauses.
+   Completing the 200-case official benchmark across 3 systems required 600 live LLM calls and ~200,000 tokens, bumping against Groq's free-tier rolling ceilings and taking 10,355.55s total wall-clock time (~2.88 hours) across 5 resumption sessions (with 3,145.44s spent in active inference and the remainder in rate-limit backoff sleeps). In a real-world enterprise deployment, a multi-stage LLM pipeline cannot rely on shared free public endpoints without guaranteed provisioned throughput or local fine-tuned SLMs to eliminate latency jitter and quota pauses.
 
 ---
 

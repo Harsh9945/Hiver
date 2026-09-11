@@ -4,10 +4,25 @@
     "is_official_headline": true,
     "status": "CERTIFIED_OFFICIAL_HEADLINE",
     "mode": "Live LLM API (groq/compound / 1-key pool)",
-    "elapsed_seconds": 485.42,
-    "avg_latency_per_case_sec": 2.427,
+    "elapsed_seconds": 10355.55,
+    "avg_latency_per_case_sec": 51.778,
     "estimated_cost_usd": 0.0324,
-    "evaluated_at": "2026-09-11 10:02:51 UTC"
+    "evaluated_at": "2026-09-11 10:02:51 UTC",
+    "timing_breakdown": {
+      "total_wall_clock_seconds": 10355.55,
+      "total_wall_clock_hours": 2.88,
+      "active_inference_seconds": 3145.44,
+      "rate_limit_backoff_seconds": 7210.11,
+      "total_chunks_evaluated": 60,
+      "avg_active_latency_per_case_sec": 15.727,
+      "provenance_sessions": [
+        "task-869: AI Agent (200), Simple (200), Trivial (10) -> 3068.85s",
+        "task-987: Trivial (cases 11-50) -> 334.92s",
+        "task-1003: Trivial (cases 51-130) -> 311.76s",
+        "task-1025: Trivial (cases 131-180) -> 6514.49s (rate-limit backoff)",
+        "task-1048: Trivial (cases 181-200) -> 125.53s"
+      ]
+    }
   },
   "provenance": {
     "total_cases": 200,
