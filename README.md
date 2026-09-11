@@ -12,8 +12,8 @@ A production-grade AI Customer Support Agent tailored for **@AppleSupport** on T
 ### 1.1 Prerequisites & Installation
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd hiver-support-agent
+git clone https://github.com/Harsh9945/Hiver.git
+cd Hiver
 
 # Install dependencies
 pip install -r requirements.txt
@@ -157,15 +157,18 @@ Customer support errors carry asymmetric consequences:
 ## 5. Repository Structure
 
 ```
-hiver-support-agent/
+Hiver/
 ├── README.md                      # Setup & rapid reproduction instructions
 ├── requirements.txt               # Pinned dependencies
-├── .env.example                   # API configuration template
-├── decision_log.md                # 14 detailed engineering decisions
-├── run_tests.py                   # Master test runner
+├── .env.example                   # API configuration template with dummy values
+├── .gitignore                     # Excludes credentials, checkpoints, and raw 500MB CSV
+├── decision_log.md                # 15 detailed engineering decisions
+├── run_tests.py                   # Master test runner (0% leakage, contract checks)
 ├── report/
 │   └── report.md                  # Comprehensive 6-page evaluation report
 ├── data/
+│   ├── eval_results.json          # Certified N=200 official benchmark results (JSON)
+│   ├── judge_agreement_results.json # 40-case human-vs-judge empirical metrics
 │   ├── taxonomy.json              # 9 brand-derived intent definitions & examples
 │   ├── dev/
 │   │   └── dev_set.json           # 35 cases for threshold tuning
