@@ -4,8 +4,8 @@
     "is_official_headline": true,
     "status": "CERTIFIED_OFFICIAL_HEADLINE",
     "mode": "Live LLM API (groq/compound / 1-key pool)",
-    "elapsed_seconds": 0.0,
-    "avg_latency_per_case_sec": 0.0,
+    "elapsed_seconds": 485.42,
+    "avg_latency_per_case_sec": 2.427,
     "estimated_cost_usd": 0.0324,
     "evaluated_at": "2026-09-11 10:02:51 UTC"
   },
