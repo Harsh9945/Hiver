@@ -1,0 +1,96 @@
+{
+  "version": "1.0.0",
+  "brand": "AppleSupport",
+  "intents": {
+    "battery_performance": {
+      "description": "Battery drain, rapid percentage drop, overheating/thermal issues, charging failure, or battery health degradation.",
+      "default_routing": "auto_handle",
+      "sensitive": false,
+      "examples": [
+        "My iPhone 8 battery drains from 100% to 20% in 2 hours without using it. Is iOS 11 causing this?",
+        "Phone gets extremely hot while charging and battery icon is stuck at 80%.",
+        "Battery health dropped to 79% and it shuts down unexpectedly at 30%."
+      ]
+    },
+    "software_bug_ios": {
+      "description": "Operating system anomalies, app crashes, touchscreen freezing, keyboard lag, Bluetooth/Wi-Fi glitches, or update installation errors.",
+      "default_routing": "auto_handle",
+      "sensitive": false,
+      "examples": [
+        "Ever since updating to iOS 11.1, the YouTube app freezes and my phone will not lock.",
+        "Calculator app adds numbers incorrectly when typing quickly. 1+2+3 gives 24!",
+        "My lock screen clock disappeared and music controls do not respond."
+      ]
+    },
+    "account_appleid_icloud": {
+      "description": "Apple ID account lockouts, 2-factor authentication codes, forgotten passwords/passcodes, iCloud storage full, and backup sync issues.",
+      "default_routing": "auto_handle",
+      "sensitive": false,
+      "examples": [
+        "I forgot my Apple ID password and the recovery email is an old address I cannot access.",
+        "My Apple ID has been disabled for security reasons, how can I unlock it?",
+        "iCloud backup says not enough storage even though I just upgraded to 50GB."
+      ]
+    },
+    "hardware_damage_repair": {
+      "description": "Physical damage including cracked glass/screens, liquid damage, camera breakage, swollen battery housing, or physical button failure.",
+      "default_routing": "escalate",
+      "sensitive": true,
+      "examples": [
+        "Dropped my iPhone X on concrete and the back glass completely shattered.",
+        "My phone fell in the pool and will not turn on even after drying for 2 days.",
+        "The battery has swollen and is pushing the screen off the frame."
+      ]
+    },
+    "warranty_applecare": {
+      "description": "Inquiries about AppleCare+ warranty coverage, policy expiration dates, repair status tracking, transfer of coverage, or deductibles.",
+      "default_routing": "escalate",
+      "sensitive": true,
+      "examples": [
+        "How do I check if my MacBook Pro is still covered under AppleCare+?",
+        "I sent my iPhone in for repair 5 days ago, repair ID 1092837. What is the status?",
+        "Does AppleCare+ cover accidental liquid damage if I bought it in the UK?"
+      ]
+    },
+    "purchase_billing": {
+      "description": "Unknown credit card charges from Apple.com/bill, unauthorized in-app purchases, subscription cancellations, refunds, or gift card errors.",
+      "default_routing": "escalate",
+      "sensitive": true,
+      "examples": [
+        "I was charged .99 on my credit card from Apple but I do not have any active subscriptions.",
+        "My child made an accidental  in-app purchase in Roblox, I need an immediate refund.",
+        "App Store redeemed code says it has already been redeemed, please help."
+      ]
+    },
+    "device_setup_howto": {
+      "description": "Guidance on initial device setup, data migration from Android/PC, Quick Start, AirDrop configuration, or enabling specific settings.",
+      "default_routing": "auto_handle",
+      "sensitive": false,
+      "examples": [
+        "How do I transfer my WhatsApp chats and photos from Android to my new iPhone 11?",
+        "How do I enable dark mode and configure Do Not Disturb while driving?",
+        "Setting up new iPad for my elderly mother, how do I restrict in-app purchases?"
+      ]
+    },
+    "product_availability_preorder": {
+      "description": "Device launch dates, stock availability in Apple retail stores, shipping/delivery windows, trade-in values, or pre-order status.",
+      "default_routing": "auto_handle",
+      "sensitive": false,
+      "examples": [
+        "When will iPhone X 256GB Space Gray be in stock for pickup at the Regent Street Apple Store?",
+        "My pre-order says preparing to ship, will it arrive on Friday launch day?",
+        "What is the trade-in value of an iPhone 6s in good condition towards an iPhone 8?"
+      ]
+    },
+    "general_feedback_other": {
+      "description": "Catch-all category for customer compliments, general complaints without actionable technical issues, spam, or ambiguous/fragmented queries.",
+      "default_routing": "auto_handle",
+      "sensitive": false,
+      "examples": [
+        "Shoutout to the Genius Bar team at Fifth Ave store for fixing my Mac in 30 mins! You rock!",
+        "Apple is the worst company ever, I hate the new design changes.",
+        "Hey @AppleSupport can someone help me please?"
+      ]
+    }
+  }
+}

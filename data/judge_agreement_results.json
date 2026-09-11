@@ -1,0 +1,180 @@
+{
+  "sample_size": 40,
+  "judge_mode": "CALIBRATED_OFFLINE_RUBRIC",
+  "provenance": {
+    "total_cases": 40,
+    "live_count": 0,
+    "fallback_count": 40,
+    "fallback_rate": 1.0
+  },
+  "cohen_kappa_linear": 0.0,
+  "pearson_correlation": 0.404,
+  "mean_absolute_error": 0.4688,
+  "exact_match_ratio": 0.625,
+  "within_1_point_ratio": 0.975,
+  "human_mean_overall": 3.59,
+  "judge_mean_overall": 4.03,
+  "disagreement_count": 16,
+  "disagreements": [
+    {
+      "case_id": "1502951",
+      "customer_text": "my charger is ACTING UP its not broken anywhere but it keeps saying \"this accessory may not be supported\" or whatever FUCK YOU @115858",
+      "reply": "@468830 We've received your DM and are happy to continue working with you there.",
+      "human_score": 2.25,
+      "judge_score": 3.5,
+      "difference": 1.25,
+      "human_notes": "Human audit against rubric: acknowledgment of existing DM without diagnostic content; capped as deflection.",
+      "judge_rationale": "Offline baseline rubric: matched 1/3 checklist items."
+    },
+    {
+      "case_id": "848065",
+      "customer_text": "Dear @115858 you suck for this new update, ever since this new update my phone been on crack",
+      "reply": "@321552 We're here to help. Tell us more about the issues you're experiencing with your iPhone.",
+      "human_score": 3.0,
+      "judge_score": 3.5,
+      "difference": 0.5,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 1/3 checklist items."
+    },
+    {
+      "case_id": "1204182",
+      "customer_text": ".@AppleSupport hi - sent our broken iPad off to be repaired/replaced nearly 2 weeks ago and no news. How do I chase this up? Thanks.",
+      "reply": "@402879 Thanks for reaching out. You can check the repair status via this link: https://t.co/PfScYeIExA",
+      "human_score": 4.5,
+      "judge_score": 4.0,
+      "difference": 0.5,
+      "human_notes": "Human audit against rubric: provides verified official Apple link directly addressing the specific issue.",
+      "judge_rationale": "Offline baseline rubric: matched 1/3 checklist items."
+    },
+    {
+      "case_id": "1220032",
+      "customer_text": "Can @115858 make phones that don't crap out in a year...right AFTER the warranty expires....😤😤😤",
+      "reply": "@406236 We're happy to help however we can. What's going on with your iPhone?",
+      "human_score": 3.0,
+      "judge_score": 3.75,
+      "difference": 0.75,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 0/2 checklist items."
+    },
+    {
+      "case_id": "506562",
+      "customer_text": "My battery is at 54% noooooooooooooo , I just charged it wtf @115858 https://t.co/tuHNTjbxei",
+      "reply": "@236234 We know how vital your battery is. Let's get this figured out. Did you use the Apple brand Lightning to USB cable and power adapter to charge? Were you using your iPhone?",
+      "human_score": 2.75,
+      "judge_score": 4.25,
+      "difference": 1.5,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 2/3 checklist items."
+    },
+    {
+      "case_id": "1153448",
+      "customer_text": "iOS 11 is the biggest piece of shit update I’ve ever had done. NOT TO MENTION IT AUTOMATICALLY UPDATED FOR ME. I want a refund @AppleSupport",
+      "reply": "@391389 If you would like for us to assist with any issues you are having with your devices, let us know. We're here to help!",
+      "human_score": 3.0,
+      "judge_score": 3.5,
+      "difference": 0.5,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 0/3 checklist items."
+    },
+    {
+      "case_id": "1349514",
+      "customer_text": "@115858 can you fix the Battery drainage issue please it drains the battery really quickly can that be fixed please?",
+      "reply": "@434695 Thanks for reaching out. DM which iPhone and specific iOS version are you using currently so we can help. https://t.co/GDrqU22YpT",
+      "human_score": 3.75,
+      "judge_score": 4.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: provides helpful support link with partial troubleshooting context.",
+      "judge_rationale": "Offline baseline rubric: matched 2/3 checklist items."
+    },
+    {
+      "case_id": "936752",
+      "customer_text": "@AppleSupport if you’re going to force me to update then at least make sure it works beforehand. iOS 11 is broken.",
+      "reply": "@342065 We want to help. What device are you using with iOS 11? Also, what issues are you experiencing?",
+      "human_score": 2.75,
+      "judge_score": 3.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 0/3 checklist items."
+    },
+    {
+      "case_id": "146671",
+      "customer_text": "@115858 @AppleSupport How do I get rid of this? Also even if put my card info in it gets declined. https://t.co/cwR2dd5omM",
+      "reply": "@149294 We can help. Please visit us here to resolve this issue and check that your payment method is supported: https://t.co/Y0YoIRcZa7",
+      "human_score": 3.75,
+      "judge_score": 4.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: provides helpful support link with partial troubleshooting context.",
+      "judge_rationale": "Offline baseline rubric: matched 1/2 checklist items."
+    },
+    {
+      "case_id": "934468",
+      "customer_text": "@115858 fix your airdrop!!!",
+      "reply": "@341669 Let us know the issue you’re noticing with AirDrop, and we’ll be glad to work towards a resolution with you.",
+      "human_score": 3.0,
+      "judge_score": 3.5,
+      "difference": 0.5,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 0/2 checklist items."
+    },
+    {
+      "case_id": "505063",
+      "customer_text": "@AppleSupport The gestures that used to be used to multitask no longer work. How do I make them work properly again?",
+      "reply": "@235789 Let us help you get this sorted out. First, can you tell us which iOS version you are currently using please?",
+      "human_score": 2.75,
+      "judge_score": 3.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 0/2 checklist items."
+    },
+    {
+      "case_id": "807881",
+      "customer_text": "how do i fix this on mac iphoto? @116333 @AppleSupport i have enough disk space… https://t.co/P51dH9r3CV",
+      "reply": "@312510 We're here to help. To confirm, you're attempting to open a photo using the Photos app, correct?",
+      "human_score": 3.0,
+      "judge_score": 3.5,
+      "difference": 0.5,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 0/2 checklist items."
+    },
+    {
+      "case_id": "622622",
+      "customer_text": "@AppleSupport so saddened by the handling of my moms iPhone X preorder. She’s gotten no reason on why her phone is now being shipped back to the warehouse. It was scheduled to be delivered Monday. Now due to the return request from @115858 it’s going to be 10-14 days.",
+      "reply": "@267778 Let's get you pointed in the right direction for help with your mom's order. Please DM us with the country where your mom is located. https://t.co/GDrqU22YpT",
+      "human_score": 3.75,
+      "judge_score": 4.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: provides helpful support link with partial troubleshooting context.",
+      "judge_rationale": "Offline baseline rubric: matched 1/2 checklist items."
+    },
+    {
+      "case_id": "148189",
+      "customer_text": "@AppleSupport I had a notification saying my replacement phone was being sent last Thursday, I've still heard nothing, how long do replacements usually take to ship?!",
+      "reply": "@149710 We'd love to look into this with you. The email that you received notifying you of the shipment should also have a tracking number. Is there not one included? Let us know in DM and we can continue investigating. https://t.co/GDrqU2kzhr",
+      "human_score": 3.75,
+      "judge_score": 4.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: provides helpful support link with partial troubleshooting context.",
+      "judge_rationale": "Offline baseline rubric: matched 1/2 checklist items."
+    },
+    {
+      "case_id": "1271073",
+      "customer_text": "@AppleSupport Can I pre-order Iphone X with apple store app ?",
+      "reply": "@417591 You sure can. For more details on pre-orders, check out this link: https://t.co/xig2MmvJ3H",
+      "human_score": 3.75,
+      "judge_score": 4.75,
+      "difference": 1.0,
+      "human_notes": "Human audit against rubric: provides helpful support link with partial troubleshooting context.",
+      "judge_rationale": "Offline baseline rubric: matched 1/2 checklist items."
+    },
+    {
+      "case_id": "1387628",
+      "customer_text": "Hi @AppleSupport is it possible to buy from a physical UK store and get a product posted? Sadly you have no stock online, only some stores.",
+      "reply": "@442862 We do not ship from the Apple Store, but you are more than welcome to post any item after the sale.",
+      "human_score": 2.75,
+      "judge_score": 4.25,
+      "difference": 1.5,
+      "human_notes": "Human audit against rubric: asks clarifying questions without concrete troubleshooting pathways.",
+      "judge_rationale": "Offline baseline rubric: matched 2/2 checklist items."
+    }
+  ]
+}

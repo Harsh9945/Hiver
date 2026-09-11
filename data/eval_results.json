@@ -1,0 +1,641 @@
+{
+  "metadata": {
+    "sample_size": 200,
+    "is_official_headline": true,
+    "status": "CERTIFIED_OFFICIAL_HEADLINE",
+    "mode": "Live LLM API (groq/compound / 1-key pool)",
+    "elapsed_seconds": 0.0,
+    "avg_latency_per_case_sec": 0.0,
+    "estimated_cost_usd": 0.0324,
+    "evaluated_at": "2026-09-11 10:02:51 UTC"
+  },
+  "provenance": {
+    "total_cases": 200,
+    "generation": {
+      "ai_agent_live_count": 200,
+      "ai_agent_fallback_count": 0,
+      "ai_agent_fallback_rate": 0.0
+    },
+    "judge": {
+      "total_evaluations": 600,
+      "live_evaluations": 600,
+      "fallback_evaluations": 0,
+      "fallback_rate": 0.0
+    },
+    "integrity_certified": true
+  },
+  "systems": {
+    "AI Agent (Proposed)": {
+      "classification": {
+        "accuracy": 0.655,
+        "macro_precision": 0.7218,
+        "macro_recall": 0.6867,
+        "macro_f1": 0.6852,
+        "weighted_f1": 0.6484,
+        "per_class": {
+          "account_appleid_icloud": {
+            "precision": 0.8,
+            "recall": 0.7273,
+            "f1": 0.7619,
+            "support": 22
+          },
+          "battery_performance": {
+            "precision": 0.5455,
+            "recall": 0.6,
+            "f1": 0.5714,
+            "support": 30
+          },
+          "device_setup_howto": {
+            "precision": 0.3871,
+            "recall": 0.6667,
+            "f1": 0.4898,
+            "support": 18
+          },
+          "general_feedback_other": {
+            "precision": 0.3333,
+            "recall": 0.16,
+            "f1": 0.2162,
+            "support": 25
+          },
+          "hardware_damage_repair": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667,
+            "support": 22
+          },
+          "product_availability_preorder": {
+            "precision": 1.0,
+            "recall": 0.8571,
+            "f1": 0.9231,
+            "support": 14
+          },
+          "purchase_billing": {
+            "precision": 0.875,
+            "recall": 0.9545,
+            "f1": 0.913,
+            "support": 22
+          },
+          "software_bug_ios": {
+            "precision": 0.5556,
+            "recall": 0.7143,
+            "f1": 0.625,
+            "support": 35
+          },
+          "warranty_applecare": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 12
+          }
+        },
+        "classes": [
+          "account_appleid_icloud",
+          "battery_performance",
+          "device_setup_howto",
+          "general_feedback_other",
+          "hardware_damage_repair",
+          "product_availability_preorder",
+          "purchase_billing",
+          "software_bug_ios",
+          "warranty_applecare"
+        ],
+        "confusion_matrix": [
+          [
+            16,
+            0,
+            3,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            18,
+            4,
+            2,
+            0,
+            0,
+            3,
+            3,
+            0
+          ],
+          [
+            3,
+            1,
+            12,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            4,
+            7,
+            4,
+            0,
+            0,
+            0,
+            10,
+            0
+          ],
+          [
+            1,
+            2,
+            3,
+            2,
+            11,
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1,
+            0,
+            12,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            21,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            1,
+            2,
+            0,
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12
+          ]
+        ]
+      },
+      "routing": {
+        "precision": 0.8462,
+        "recall": 0.88,
+        "f1": 0.8627,
+        "true_positives": 66,
+        "false_positives": 12,
+        "true_negatives": 113,
+        "false_negatives": 9,
+        "cost_fn": 5.0,
+        "cost_fp": 1.0,
+        "expected_unit_cost": 0.285,
+        "always_escalate_cost": 0.625
+      },
+      "reply_quality": {
+        "mean_groundedness": 0.9822,
+        "median_groundedness": 1.0,
+        "min_groundedness": 0.8182,
+        "max_groundedness": 1.0,
+        "mean_similarity": 0.5777
+      },
+      "judge_quality": {
+        "mean_overall": 2.25,
+        "correctness": 2.06,
+        "tone": 3.38,
+        "completeness": 1.55,
+        "actionability": 2.0
+      }
+    },
+    "Simple Baseline": {
+      "classification": {
+        "accuracy": 0.59,
+        "macro_precision": 0.6801,
+        "macro_recall": 0.602,
+        "macro_f1": 0.6287,
+        "weighted_f1": 0.6022,
+        "per_class": {
+          "account_appleid_icloud": {
+            "precision": 0.7391,
+            "recall": 0.7727,
+            "f1": 0.7556,
+            "support": 22
+          },
+          "battery_performance": {
+            "precision": 0.5405,
+            "recall": 0.6667,
+            "f1": 0.597,
+            "support": 30
+          },
+          "device_setup_howto": {
+            "precision": 0.6923,
+            "recall": 0.5,
+            "f1": 0.5806,
+            "support": 18
+          },
+          "general_feedback_other": {
+            "precision": 0.2683,
+            "recall": 0.44,
+            "f1": 0.3333,
+            "support": 25
+          },
+          "hardware_damage_repair": {
+            "precision": 0.8333,
+            "recall": 0.6818,
+            "f1": 0.75,
+            "support": 22
+          },
+          "product_availability_preorder": {
+            "precision": 0.8889,
+            "recall": 0.5714,
+            "f1": 0.6957,
+            "support": 14
+          },
+          "purchase_billing": {
+            "precision": 0.6,
+            "recall": 0.4091,
+            "f1": 0.4865,
+            "support": 22
+          },
+          "software_bug_ios": {
+            "precision": 0.5588,
+            "recall": 0.5429,
+            "f1": 0.5507,
+            "support": 35
+          },
+          "warranty_applecare": {
+            "precision": 1.0,
+            "recall": 0.8333,
+            "f1": 0.9091,
+            "support": 12
+          }
+        },
+        "classes": [
+          "account_appleid_icloud",
+          "battery_performance",
+          "device_setup_howto",
+          "general_feedback_other",
+          "hardware_damage_repair",
+          "product_availability_preorder",
+          "purchase_billing",
+          "software_bug_ios",
+          "warranty_applecare"
+        ],
+        "confusion_matrix": [
+          [
+            17,
+            0,
+            1,
+            3,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            20,
+            0,
+            6,
+            0,
+            0,
+            2,
+            2,
+            0
+          ],
+          [
+            3,
+            1,
+            9,
+            4,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            11,
+            0,
+            0,
+            0,
+            8,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            3,
+            15,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            4,
+            0,
+            8,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            0,
+            7,
+            0,
+            0,
+            9,
+            1,
+            0
+          ],
+          [
+            2,
+            7,
+            1,
+            3,
+            1,
+            1,
+            1,
+            19,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            10
+          ]
+        ]
+      },
+      "routing": {
+        "precision": 0.873,
+        "recall": 0.7333,
+        "f1": 0.7971,
+        "true_positives": 55,
+        "false_positives": 8,
+        "true_negatives": 117,
+        "false_negatives": 20,
+        "cost_fn": 5.0,
+        "cost_fp": 1.0,
+        "expected_unit_cost": 0.54,
+        "always_escalate_cost": 0.625
+      },
+      "reply_quality": {
+        "mean_groundedness": 0.25,
+        "median_groundedness": 0.25,
+        "min_groundedness": 0.25,
+        "max_groundedness": 0.25,
+        "mean_similarity": 0.0
+      },
+      "judge_quality": {
+        "mean_overall": 2.58,
+        "correctness": 2.56,
+        "tone": 3.21,
+        "completeness": 2.02,
+        "actionability": 2.51
+      }
+    },
+    "Trivial Baseline": {
+      "classification": {
+        "accuracy": 0.175,
+        "macro_precision": 0.0194,
+        "macro_recall": 0.1111,
+        "macro_f1": 0.0331,
+        "weighted_f1": 0.0521,
+        "per_class": {
+          "account_appleid_icloud": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 22
+          },
+          "battery_performance": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 30
+          },
+          "device_setup_howto": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 18
+          },
+          "general_feedback_other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 25
+          },
+          "hardware_damage_repair": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 22
+          },
+          "product_availability_preorder": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 14
+          },
+          "purchase_billing": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 22
+          },
+          "software_bug_ios": {
+            "precision": 0.175,
+            "recall": 1.0,
+            "f1": 0.2979,
+            "support": 35
+          },
+          "warranty_applecare": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 12
+          }
+        },
+        "classes": [
+          "account_appleid_icloud",
+          "battery_performance",
+          "device_setup_howto",
+          "general_feedback_other",
+          "hardware_damage_repair",
+          "product_availability_preorder",
+          "purchase_billing",
+          "software_bug_ios",
+          "warranty_applecare"
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            30,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            25,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            22,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            35,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0
+          ]
+        ]
+      },
+      "routing": {
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5455,
+        "true_positives": 75,
+        "false_positives": 125,
+        "true_negatives": 0,
+        "false_negatives": 0,
+        "cost_fn": 5.0,
+        "cost_fp": 1.0,
+        "expected_unit_cost": 0.625,
+        "always_escalate_cost": 0.625
+      },
+      "reply_quality": {
+        "mean_groundedness": 0.05,
+        "median_groundedness": 0.05,
+        "min_groundedness": 0.05,
+        "max_groundedness": 0.05,
+        "mean_similarity": 0.0
+      },
+      "judge_quality": {
+        "mean_overall": 2.27,
+        "correctness": 1.94,
+        "tone": 3.68,
+        "completeness": 1.33,
+        "actionability": 2.1
+      }
+    }
+  }
+}

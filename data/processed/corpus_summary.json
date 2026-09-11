@@ -1,0 +1,10 @@
+{
+  "brand": "AppleSupport",
+  "retrieval_corpus_size": 15000,
+  "dev_set_size": 35,
+  "golden_set_size": 200,
+  "judge_agreement_subset_size": 40,
+  "retrieval_index_file": "retrieval_index.pkl",
+  "index_size_mb": 7.22,
+  "leakage_status": "Zero leakage verified: all dev and golden IDs excluded from retrieval index."
+}

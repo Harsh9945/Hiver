@@ -1,0 +1,550 @@
+[
+  {
+    "case_id": "333645",
+    "customer_text": "@115858 @AppleSupport had the iPhone 8 4 days and a crack has appeared in the middle from the side. No signs of impact anywhere ???",
+    "gold_intent": "hardware_damage_repair",
+    "gold_decision": "escalate",
+    "gold_reason": "Physical hardware damage requires in-person diagnostic at Apple Store Genius Bar or mail-in repair dispatch.",
+    "rubric_checklist": [
+      "Acknowledge damage with empathy",
+      "Direct customer to locate.apple.com or Genius Bar appointment",
+      "Clarify repair options without diagnosing physical state over chat"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@195488 An Apple Store is a great option. Back up your device beforehand and definitely make an appointment. We can help with that."
+  },
+  {
+    "case_id": "1442023",
+    "customer_text": "fuck @115858 @797 tried updating my stupid phone and its broken, now i have to live off my fucking laptop until they send me a new one im so annoyed",
+    "gold_intent": "hardware_damage_repair",
+    "gold_decision": "escalate",
+    "gold_reason": "Escalated due to high customer frustration and negative sentiment.",
+    "rubric_checklist": [
+      "Acknowledge damage with empathy",
+      "Direct customer to locate.apple.com or Genius Bar appointment",
+      "Clarify repair options without diagnosing physical state over chat"
+    ],
+    "edge_case_tags": [
+      "angry_sentiment"
+    ],
+    "historical_agent_reply": "@454577 We want to help in any way we can. Please send us a DM with more details, and we'll get started. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "898703",
+    "customer_text": "My phone really is a broken piece of crap since the iOS 11 update. Thanks again, @115858 !",
+    "gold_intent": "hardware_damage_repair",
+    "gold_decision": "escalate",
+    "gold_reason": "Physical hardware damage requires in-person diagnostic at Apple Store Genius Bar or mail-in repair dispatch.",
+    "rubric_checklist": [
+      "Acknowledge damage with empathy",
+      "Direct customer to locate.apple.com or Genius Bar appointment",
+      "Clarify repair options without diagnosing physical state over chat"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@333401 Send us a DM and let us know specifically what's going on. We'll do our best to help. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "254716",
+    "customer_text": "I have an iPhone 128GB 6Ass and the iOS 11.0.2 to update has broken my fucking phone. Thanks @115858 and @116333. #FreezesAndDelays",
+    "gold_intent": "hardware_damage_repair",
+    "gold_decision": "escalate",
+    "gold_reason": "Escalated due to high customer frustration and negative sentiment.",
+    "rubric_checklist": [
+      "Acknowledge damage with empathy",
+      "Direct customer to locate.apple.com or Genius Bar appointment",
+      "Clarify repair options without diagnosing physical state over chat"
+    ],
+    "edge_case_tags": [
+      "angry_sentiment"
+    ],
+    "historical_agent_reply": "@176541 We'd like to help get your phone working properly again. DM us more details to get started. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "327000",
+    "customer_text": "@AppleSupport terrible way of handling my 6 month long nitemare w/iPhone 7 power issues (under warranty) &amp; nuthin but grief &amp; inconvenience",
+    "gold_intent": "warranty_applecare",
+    "gold_decision": "escalate",
+    "gold_reason": "Escalated due to high customer frustration and negative sentiment.",
+    "rubric_checklist": [
+      "Provide checkcoverage.apple.com link",
+      "Escalate to human specialist for official policy lookup"
+    ],
+    "edge_case_tags": [
+      "angry_sentiment"
+    ],
+    "historical_agent_reply": "@193927 We got your DM, and we will respond to you there."
+  },
+  {
+    "case_id": "199415",
+    "customer_text": "@AppleSupport Can I get MBP 2017 13inch 16gb RAM in India? If not, is buying from the US a good idea (wrt warranty) for an Indian citizen?",
+    "gold_intent": "warranty_applecare",
+    "gold_decision": "escalate",
+    "gold_reason": "Warranty verification and AppleCare+ claims require accessing customer account records and device serial details.",
+    "rubric_checklist": [
+      "Provide checkcoverage.apple.com link",
+      "Escalate to human specialist for official policy lookup"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@163011 We're here to help. We recommend reaching out to our Sales Support via the following link: https://t.co/8yjRd1Xo0i"
+  },
+  {
+    "case_id": "847039",
+    "customer_text": "1st period and i only have 52% after a full night of being charged. smh @AppleSupport get ur updates right",
+    "gold_intent": "purchase_billing",
+    "gold_decision": "escalate",
+    "gold_reason": "Financial billing disputes and refund requests require human verification to protect payment credentials.",
+    "rubric_checklist": [
+      "Direct to reportaproblem.apple.com",
+      "Advise checking active subscriptions in Settings > Apple ID",
+      "Escalate to billing team"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@321303 We know how important battery life is. Reach out to us in DM with more information. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1144248",
+    "customer_text": "Dear @AppleSupport you removed some paid apps from the app store, please refund me.",
+    "gold_intent": "purchase_billing",
+    "gold_decision": "escalate",
+    "gold_reason": "Financial billing disputes and refund requests require human verification to protect payment credentials.",
+    "rubric_checklist": [
+      "Direct to reportaproblem.apple.com",
+      "Advise checking active subscriptions in Settings > Apple ID",
+      "Escalate to billing team"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@389322 Our iTunes Store Support team can look into your account. Please visit this link: https://t.co/SDIe7UiyJN"
+  },
+  {
+    "case_id": "795842",
+    "customer_text": "@AppleSupport is there any way I can get a refund from Music I bought a while ago?",
+    "gold_intent": "purchase_billing",
+    "gold_decision": "escalate",
+    "gold_reason": "Financial billing disputes and refund requests require human verification to protect payment credentials.",
+    "rubric_checklist": [
+      "Direct to reportaproblem.apple.com",
+      "Advise checking active subscriptions in Settings > Apple ID",
+      "Escalate to billing team"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@309754 We're happy to help and point you in the right direction. Visit our iTunes Team here: https://t.co/SDIe7UiyJN"
+  },
+  {
+    "case_id": "1006105",
+    "customer_text": "@AppleSupport charged my card three times and my Music is still not working",
+    "gold_intent": "purchase_billing",
+    "gold_decision": "escalate",
+    "gold_reason": "Financial billing disputes and refund requests require human verification to protect payment credentials.",
+    "rubric_checklist": [
+      "Direct to reportaproblem.apple.com",
+      "Advise checking active subscriptions in Settings > Apple ID",
+      "Escalate to billing team"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@358119 We're here to help. Let's take this to DM so we can better assist you. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "905799",
+    "customer_text": "@115858 I need help with my Apple ID",
+    "gold_intent": "account_appleid_icloud",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Apple ID and iCloud account recovery issues follow standard automated self-service protocols via iforgot.apple.com.",
+    "rubric_checklist": [
+      "Direct to iforgot.apple.com",
+      "Never ask for password over chat",
+      "Explain account recovery waiting period if applicable"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@335039 We're happy to help. What kind of issues are you facing with your Apple ID?"
+  },
+  {
+    "case_id": "152986",
+    "customer_text": "@AppleSupport Hi! For some reason I can't log into my iTunes account or iCloud account on my phone. I can easily pull it up on my computer but my phone just loads and loads when I type in my information and then stops like I never tried to log in",
+    "gold_intent": "account_appleid_icloud",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Apple ID and iCloud account recovery issues follow standard automated self-service protocols via iforgot.apple.com.",
+    "rubric_checklist": [
+      "Direct to iforgot.apple.com",
+      "Never ask for password over chat",
+      "Explain account recovery waiting period if applicable"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@151003 Hi there! We've received your DM and will continue working there."
+  },
+  {
+    "case_id": "1180681",
+    "customer_text": "@AppleSupport Hey there. I just did a DFU restore on my iPhone 7 Plus. However, no content appears with iCloud Photo Library turned on.",
+    "gold_intent": "account_appleid_icloud",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Apple ID and iCloud account recovery issues follow standard automated self-service protocols via iforgot.apple.com.",
+    "rubric_checklist": [
+      "Direct to iforgot.apple.com",
+      "Never ask for password over chat",
+      "Explain account recovery waiting period if applicable"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@397682 We'll be happy look into this. DM us and we'll go from there. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1329249",
+    "customer_text": "@AppleSupport There is no way to recover iTunes account's password. How can I change that account for another one??",
+    "gold_intent": "account_appleid_icloud",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Apple ID and iCloud account recovery issues follow standard automated self-service protocols via iforgot.apple.com.",
+    "rubric_checklist": [
+      "Direct to iforgot.apple.com",
+      "Never ask for password over chat",
+      "Explain account recovery waiting period if applicable"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@430141 We'll be happy to help you get back into your account. For help with resetting your password: https://t.co/fJnZYmbI9N"
+  },
+  {
+    "case_id": "1295087",
+    "customer_text": "@AppleSupport : Ever Since I downloaded iOS11 my ipad doesn't charge doesn't do any thing.It only does this. Please I need it back https://t.co/u6R6HB1Ij1",
+    "gold_intent": "battery_performance",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Routine battery performance questions can be resolved through guided battery health checks and background app management.",
+    "rubric_checklist": [
+      "Suggest checking Settings > Battery > Battery Health",
+      "Ask which apps consume the most background power",
+      "Inquire about iOS version and charger type"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@422756 We're here to help. Take a look at this article and the force restart steps: https://t.co/8MvHMFZ83h Keep us posted."
+  },
+  {
+    "case_id": "382413",
+    "customer_text": "Does Anyone Know Of A Good Battery Saver For @115858.? Their Battery Charge Doesn’t Last Long!",
+    "gold_intent": "battery_performance",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Routine battery performance questions can be resolved through guided battery health checks and background app management.",
+    "rubric_checklist": [
+      "Suggest checking Settings > Battery > Battery Health",
+      "Ask which apps consume the most background power",
+      "Inquire about iOS version and charger type"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@159871 Try following this article: https://t.co/TpjqFp3jxD"
+  },
+  {
+    "case_id": "35347",
+    "customer_text": "@AppleSupport my iphone 6s is rendered two 2 hours. Drained battery, killed all non used apps and still two hours. #newiosblows",
+    "gold_intent": "battery_performance",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Routine battery performance questions can be resolved through guided battery health checks and background app management.",
+    "rubric_checklist": [
+      "Suggest checking Settings > Battery > Battery Health",
+      "Ask which apps consume the most background power",
+      "Inquire about iOS version and charger type"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@123705 Let's look into what's happening together. Send us a DM telling us the country you're located in to begin. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "622654",
+    "customer_text": "@AppleSupport please let me downgrade to iOS 10.3 again. Every since updating my battery life has been awful and my phone keeps freezing, especially in the contacts and calls tabs. This is awful. Never thought about switching phones til now.",
+    "gold_intent": "battery_performance",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Routine battery performance questions can be resolved through guided battery health checks and background app management.",
+    "rubric_checklist": [
+      "Suggest checking Settings > Battery > Battery Health",
+      "Ask which apps consume the most background power",
+      "Inquire about iOS version and charger type"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@267786 We want to help. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1063171",
+    "customer_text": "@115858 HOW HARD IS IT TO MAKE A PHONE WITH A DECENT BATTERY LIFE 🖕🏼🖕🏼",
+    "gold_intent": "battery_performance",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Routine battery performance questions can be resolved through guided battery health checks and background app management.",
+    "rubric_checklist": [
+      "Suggest checking Settings > Battery > Battery Health",
+      "Ask which apps consume the most background power",
+      "Inquire about iOS version and charger type"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@371040 We can help with battery life. Could you Direct Message us what country you're located in?"
+  },
+  {
+    "case_id": "539895",
+    "customer_text": "@AppleSupport, 7 plus keeps crashing out of apps and returning to lock screen. Also after restoring from backup, all apps won't dl over wifi or cell. What gives? Have removed SIM, still no joy... #nothappy #iosupdate",
+    "gold_intent": "software_bug_ios",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Software anomalies and iOS update glitches can be addressed via standard troubleshooting (force restart, settings reset, update verification).",
+    "rubric_checklist": [
+      "Ask for current iOS version (Settings > General > About)",
+      "Recommend a force restart",
+      "Suggest checking for app updates in the App Store"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@245212 Thank you for taking the time to reach out to us. We'd be happy to look into this with you. Have any apps downloaded? Do they show that they're attempting to load?"
+  },
+  {
+    "case_id": "912031",
+    "customer_text": "@115858 just wanted to say your #IOS update SUUUUUUUCCCKKKSSS!!!!!!!! If you wanted me to change my mobile you win! I will get a #samsung 😡",
+    "gold_intent": "software_bug_ios",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Software anomalies and iOS update glitches can be addressed via standard troubleshooting (force restart, settings reset, update verification).",
+    "rubric_checklist": [
+      "Ask for current iOS version (Settings > General > About)",
+      "Recommend a force restart",
+      "Suggest checking for app updates in the App Store"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@336598 What kind of issues are you having since the update? We'd love to help."
+  },
+  {
+    "case_id": "753569",
+    "customer_text": "@115858 you updated the update but still didn’t fix it so that when I use the volume controls it works for my ringer sounds.",
+    "gold_intent": "software_bug_ios",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Software anomalies and iOS update glitches can be addressed via standard troubleshooting (force restart, settings reset, update verification).",
+    "rubric_checklist": [
+      "Ask for current iOS version (Settings > General > About)",
+      "Recommend a force restart",
+      "Suggest checking for app updates in the App Store"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@300097 We'd be happy to look into this with you. DM us your current iOS version, and we'll continue from there. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1249048",
+    "customer_text": "@AppleSupport Ever since the update before this newest one, I haven't been able to figure out how to transfer my photos from phone to PC.",
+    "gold_intent": "software_bug_ios",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Software anomalies and iOS update glitches can be addressed via standard troubleshooting (force restart, settings reset, update verification).",
+    "rubric_checklist": [
+      "Ask for current iOS version (Settings > General > About)",
+      "Recommend a force restart",
+      "Suggest checking for app updates in the App Store"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@413053 We'll be happy to look into this with you. DM us and we'll get started. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1083284",
+    "customer_text": "@115858 this new update is pretty buggy... the music app is...confused.",
+    "gold_intent": "software_bug_ios",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Software anomalies and iOS update glitches can be addressed via standard troubleshooting (force restart, settings reset, update verification).",
+    "rubric_checklist": [
+      "Ask for current iOS version (Settings > General > About)",
+      "Recommend a force restart",
+      "Suggest checking for app updates in the App Store"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@375531 Hi, can you tell us more about the Music app and what you're experiencing? We'll see what we can do to help."
+  },
+  {
+    "case_id": "1220434",
+    "customer_text": "@AppleSupport is there anyway to stop update notifications? It appears these updates are for the iPhone X.",
+    "gold_intent": "software_bug_ios",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Software anomalies and iOS update glitches can be addressed via standard troubleshooting (force restart, settings reset, update verification).",
+    "rubric_checklist": [
+      "Ask for current iOS version (Settings > General > About)",
+      "Recommend a force restart",
+      "Suggest checking for app updates in the App Store"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@375521 Thanks for reaching out. What version of iOS are you receiving notifications for?"
+  },
+  {
+    "case_id": "778341",
+    "customer_text": "@AppleSupport Hi, how do I fix this? I’m currently living in the United Kingdom https://t.co/bGuO6nKcZ7",
+    "gold_intent": "device_setup_howto",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Device setup and feature how-to questions can be auto-handled with standard step-by-step guidance.",
+    "rubric_checklist": [
+      "Provide clear sequential steps",
+      "Reference official support article or Quick Start feature"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@202916 We've got your back. Are you able to change your iTunes Store country? This may help: https://t.co/Ps98mtDxy0"
+  },
+  {
+    "case_id": "509594",
+    "customer_text": "@AppleSupport trying to sync iPad, bottom shows 4.5 GB free, then sync says iPad is over capacity...why is this happening? Is the iPad full or have space? How could I ever manage space if I can’t know how much is actually being used? Guess it’s time for surface pro",
+    "gold_intent": "device_setup_howto",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Device setup and feature how-to questions can be auto-handled with standard step-by-step guidance.",
+    "rubric_checklist": [
+      "Provide clear sequential steps",
+      "Reference official support article or Quick Start feature"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@237071 We'd be happy to look into this together. Can you send us a DM? We'll go from there. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1364822",
+    "customer_text": "backup #iphone be4 switching Guy at the store watchd said it was correct too Now missin 80% of my music @AppleSupport @115948 wont help",
+    "gold_intent": "device_setup_howto",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Device setup and feature how-to questions can be auto-handled with standard step-by-step guidance.",
+    "rubric_checklist": [
+      "Provide clear sequential steps",
+      "Reference official support article or Quick Start feature"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@437769 We appreciate you bringing this to our attention. Were these Apple Music tracks or synced songs that are missing?"
+  },
+  {
+    "case_id": "556180",
+    "customer_text": "Dear @115858. Why do you sell 200 earbuds and not stock the replacement tips? #ConsumerTip a pair of $20... https://t.co/kUyytovY86",
+    "gold_intent": "product_availability_preorder",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Product stock availability and shipping queries can be resolved by linking to online store order tracking and local store availability.",
+    "rubric_checklist": [
+      "Direct to apple.com/retail or order status tracker",
+      "Clarify that stock fluctuates and store pickup is confirmed via website"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@249921 We'd be happy to look into this with you. Can you provide us which earbuds you're using?"
+  },
+  {
+    "case_id": "1328658",
+    "customer_text": "@116333 please help I’m trying to preorder the iPhone X it’s my birthday present for me from my father and this is the only time I can get",
+    "gold_intent": "product_availability_preorder",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Product stock availability and shipping queries can be resolved by linking to online store order tracking and local store availability.",
+    "rubric_checklist": [
+      "Direct to apple.com/retail or order status tracker",
+      "Clarify that stock fluctuates and store pickup is confirmed via website"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@429983 We'd like to look into this. Send us a DM to continue. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1216321",
+    "customer_text": "@AppleSupport I live on campus at college, but I want to order the Apple Watch. I can’t sign for it upon delivery. Is a signature required?",
+    "gold_intent": "product_availability_preorder",
+    "gold_decision": "auto_handle",
+    "gold_reason": "Product stock availability and shipping queries can be resolved by linking to online store order tracking and local store availability.",
+    "rubric_checklist": [
+      "Direct to apple.com/retail or order status tracker",
+      "Clarify that stock fluctuates and store pickup is confirmed via website"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@405405 We've received your DM, and will be following up with you there."
+  },
+  {
+    "case_id": "45581",
+    "customer_text": "Hey @AppleSupport - Thanks for providing me with outstanding #customerservice Much appreciated!",
+    "gold_intent": "general_feedback_other",
+    "gold_decision": "auto_handle",
+    "gold_reason": "General customer feedback or vague inquiry; standard brand acknowledgment and clarification request.",
+    "rubric_checklist": [
+      "Polite, professional brand acknowledgment",
+      "Invite customer to DM specific technical details if they require assistance"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@126092 We're glad we could help you out today. Let us know if we can be of assistance in the future. Have a great day!"
+  },
+  {
+    "case_id": "1217574",
+    "customer_text": "Thanks @115858 now I can’t answer calls on latest update! Well handy 👏🏻👍🏻",
+    "gold_intent": "general_feedback_other",
+    "gold_decision": "auto_handle",
+    "gold_reason": "General customer feedback or vague inquiry; standard brand acknowledgment and clarification request.",
+    "rubric_checklist": [
+      "Polite, professional brand acknowledgment",
+      "Invite customer to DM specific technical details if they require assistance"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@405705 Keeping in touch with loved ones and friends is important, we can help. Can you tell us a little more about what's happening?"
+  },
+  {
+    "case_id": "1214505",
+    "customer_text": "@115858 @AppleSupport iOS 11.0.3 is absolute shit. Has slowed down my phone, battery drains like anything. Worst update ever.",
+    "gold_intent": "general_feedback_other",
+    "gold_decision": "escalate",
+    "gold_reason": "Escalated due to high customer frustration and negative sentiment.",
+    "rubric_checklist": [
+      "Polite, professional brand acknowledgment",
+      "Invite customer to DM specific technical details if they require assistance"
+    ],
+    "edge_case_tags": [
+      "angry_sentiment"
+    ],
+    "historical_agent_reply": "@244622 We're here to help. Let's continue in DM. https://t.co/GDrqU22YpT"
+  },
+  {
+    "case_id": "1458750",
+    "customer_text": "@115858 Please fix this glitch where that messes up my letter I. Please. Thanks.",
+    "gold_intent": "general_feedback_other",
+    "gold_decision": "auto_handle",
+    "gold_reason": "General customer feedback or vague inquiry; standard brand acknowledgment and clarification request.",
+    "rubric_checklist": [
+      "Polite, professional brand acknowledgment",
+      "Invite customer to DM specific technical details if they require assistance"
+    ],
+    "edge_case_tags": [
+      "standard"
+    ],
+    "historical_agent_reply": "@458592 We want to help. Send us a DM letting us know which version of iOS is on this device. https://t.co/GDrqU22YpT"
+  }
+]
